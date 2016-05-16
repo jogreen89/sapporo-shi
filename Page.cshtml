@@ -17,7 +17,7 @@
         </style>
     </head>
     <body>
-        <h1>Bakery Products List</h1>
+        <h1>Products List</h1>
         <table>
             <thead>
                 <tr>
@@ -28,7 +28,8 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var row in db.Query(selectQuery)) {
+                @foreach (var row in db.Query(selectQuery)) 
+                {
                     <tr>
                         <td>@row.Id</td>
                         <td>@row.Name</td>
